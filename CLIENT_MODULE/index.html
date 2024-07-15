@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hexaria</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png"/>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--    Change this later-->
+    <!--  <script src="script.js" defer type="module"></script>-->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="assets/img/logo.png" alt="Hexaria">
+        </header>
+        <main id="game-wrapper">
+            <div id="leaderboard">
+                <div class="leaderboard__item">
+                    <p class="lb__player">Budi vs Bot</p>
+                    <p class="lb__score">20 - 20</p>
+                </div>
+            </div>
+            <canvas id="game"></canvas>
+            <div id="score">
+                <div>
+                    <h2 id="player-one__name"></h2>
+                    <h2 id="player-two__name"></h2>
+                    <p id="player-one__score">0</p>
+                    <p id="player-two__score">0</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="dialog">
+        <div id="dialog-instructions">
+            <div class="instructions">
+                <h1>Instructions</h1>
+                <p>1. Place the hexagon</p>
+                <p>2. Player with the highest score wins</p>
+
+                <div class="mode">
+                    <button id="mode-mp">Multiplayer</button>
+                    <button id="mode-bot">Bot</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="dialog-diff">
+            <h1>Difficulty</h1>
+            <div class="dialog-section">
+                <p>Choose your difficulty</p>
+                <div class="diffs">
+                    <button id="diff-easy">Easy</button>
+                    <button id="diff-medium">Medium</button>
+                    <button id="diff-hard">Hard</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="dialog-start">
+            <h1>Play</h1>
+            <div class="dialog-section">
+                <p>Input players name</p>
+                <div class="players-name">
+                    <input type="text" id="player-one__input" placeholder="Player One">
+                    <input type="text" id="player-two__input" placeholder="Player Two">
+                </div>
+            </div>
+
+            <div class="dialog-section">
+               <div class="start-wrapper">
+                   <button id="btn-start">Start!</button>
+               </div>
+            </div>
+
+        </div>
+        <div id="dialog-gameover">
+
+        </div>
+    </div>
+</body>
+</html>
